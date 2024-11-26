@@ -1,7 +1,7 @@
 title: Jekyll VNG Realisatie theme
 
 description: >-
-   Jekyll version for VNG Realisatie
+   Jekyll version for VNG Realisatie Kenniscentrum Data en Monitoring
 
 plugins:
   - jekyll-algolia
@@ -35,4 +35,4 @@ sass:
   load_paths:
     - _sass
 
-github: VNG-Realisatie/jekyll-theme-vng-realisatie
+github: michielverhoef/jekyll-theme-vngrealisatie-kcdenm
