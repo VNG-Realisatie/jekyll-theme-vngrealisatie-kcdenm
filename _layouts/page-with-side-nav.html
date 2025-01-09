@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: default
 ---
 <div class="container-fluid">
@@ -7,3 +7,35 @@ layout: default
         <div class="col-9">{{ content }}</div>
     </div>
 </div>
+ -->
+---
+layout: default
+---
+
+<div class="container-fluid">
+    <div class="row">
+        <aside class="col-2">
+            {% include side-nav.html %}
+        </aside>
+        <main class="col-10">
+            {{ content }}
+        </main>
+    </div>
+</div>
+
+<style>
+.container-fluid {
+    padding: 0;
+}
+
+aside {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+    background-color: #ffffff; 
+}
+</style>
