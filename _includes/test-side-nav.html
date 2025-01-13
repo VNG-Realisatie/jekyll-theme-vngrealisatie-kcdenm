@@ -1,0 +1,17 @@
+<ul class="nav flex-column">
+  {% for item in nav %}
+    <li class="nav-item">
+      {% if item.url or item.path %}
+        <a class="nav-link" href="{{ item.url | default: (item.path | prepend: site.baseurl) }}" {% if item.target %} target="{{ item.target }}"{% endif %}>
+          {{ item.title }}
+        </a>
+      {% else %}
+        <span class="nav-title">{{ item.title }}</span>
+      {% endif %}
+
+      {% if item.subnav %}
+        {% include nav.html nav=item.subnav %}
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
