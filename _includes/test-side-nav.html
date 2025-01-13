@@ -1,5 +1,5 @@
 <ul class="nav flex-column">
-  {% for item in nav %}
+  {% for item in site.themanav %}
     <li class="nav-item">
       {% if item.url or item.path %}
         <a class="nav-link" href="{{ item.url | default: (item.path | prepend: site.baseurl) }}" {% if item.target %} target="{{ item.target }}"{% endif %}>
