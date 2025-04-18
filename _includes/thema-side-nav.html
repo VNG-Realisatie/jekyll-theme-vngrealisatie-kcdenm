@@ -4,9 +4,13 @@
     {% if item.subnav %}
       {% include nav.html nav=item.subnav %}
     {% endif %}
-    {% if item.subsubnav %}
-      {% include navsubsub.html nav=item.subsubnav %}
+{% endfor %}
+{% for item in site.themasubnav %}
+    {% if item.subnav %}
+      {% include navsubsub.html nav=item.subnav %}
     {% endif %}
+{% endfor %}
+{% for item in site.themasubnav %}
     {% if item.navfooter %}
       {% include nav.html nav=item.navfooter %}
     {% endif %}
