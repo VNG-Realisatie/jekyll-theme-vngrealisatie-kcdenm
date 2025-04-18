@@ -10,9 +10,9 @@
       {% include navsubsub.html nav=item.subnav %}
     {% endif %}
 {% endfor %}
-{% for item in site.themasubnav %}
-    {% if item.navfooter %}
-      {% include nav.html nav=item.navfooter %}
+{% for item in site.themanavfooter %}
+    {% if item.subnav %}
+      {% include nav.html nav=item.subnav %}
     {% endif %}
   {% endfor %}
 </nav>
