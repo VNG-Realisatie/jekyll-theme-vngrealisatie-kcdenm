@@ -5,4 +5,14 @@
       {% include nav.html nav=item.subnav %}
     {% endif %}
   {% endfor %}
+{% for item in site.apisubnav %}
+    {% if item.subnav %}
+      {% include navsubsub.html nav=item.subnav %}
+    {% endif %}
+{% endfor %}
+{% for item in site.apifooter %}
+    {% if item.subnav %}
+      {% include nav.html nav=item.subnav %}
+    {% endif %}
+  {% endfor %}		
 </nav>
