@@ -1,3 +1,8 @@
+| Eigenaar | Ingevuld door |
+| --- | --- |
+| Kennis centrum Data | Michiel Verhoef |
+<hr/>
+
 # jekyll-theme-vngrealisatie-kcdenm
 
 Dit theme is een clone van het theme dat wordt gebruikt voor het deployen van de documentatie in VNG Realisatie repositories naar GitHub Pages.
