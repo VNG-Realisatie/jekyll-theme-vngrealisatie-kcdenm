@@ -4,15 +4,15 @@
     {% if item.subnav %}
       {% include nav.html nav=item.subnav %}
     {% endif %}
-  {% endfor %}
-  {% for item in site.themafooter %}
-      {% if item.subnav %}
-        {% include nav.html nav=item.subnav %}
-      {% endif %}
-  {% endfor %}
-  {% for item in site.navfooter %}
+{% endfor %}
+{% for item in site.themafooter %}
     {% if item.subnav %}
       {% include nav.html nav=item.subnav %}
-    {% endif %} 
-  {% endfor %}
+    {% endif %}
+{% endfor %}
+{% for item in site.navfooter %}
+  {% if item.subnav %}
+     {% include nav.html nav=item.subnav %}
+  {% endif %} 
+{% endfor %}
 </nav>
